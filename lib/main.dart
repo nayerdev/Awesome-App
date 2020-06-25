@@ -5,7 +5,7 @@ void main() {
   runApp(MaterialApp(
     home: HomePage (),
     theme: ThemeData(
-      primarySwatch: Colors.lightGreen
+      primarySwatch: Colors.blueGrey
     ),
     ));
 }
@@ -17,7 +17,14 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text("Hello FirstApp"),
       ),
-      body: Container(child: Text("Hi Flutter"),),
+      body: Center(
+        child: Container(
+        color: Colors.lightGreen,
+        width: 100,
+        height: 100,
+        child: Text("I'm a Box"),
+      ),
+    )
     );
   }
 }
