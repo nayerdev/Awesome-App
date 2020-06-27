@@ -20,10 +20,13 @@ class HomePage extends StatelessWidget {
       body: Center(
         child: Container(
         padding: const EdgeInsets.all(8),
-        color: Colors.lightGreen,
         width: 100,
         height: 100,
-        alignment: Alignment.center,
+        alignment: Alignment.topLeft,
+        decoration: BoxDecoration(
+          color: Colors.lightGreen,
+          
+        ),
         child: Text("I'm a Box"),
       ),
     )
